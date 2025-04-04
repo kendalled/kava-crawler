@@ -17,7 +17,7 @@
             <div class="space-y-6">
               <div>
                 <label for="location" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Starting Location</label>
-                <div class="mt-1 flex rounded-md shadow-sm">
+                <div class="mt-1 flex rounded-md">
                   <input 
                     type="text" 
                     id="location" 
