@@ -38,8 +38,9 @@
             <!-- Map Overview -->
             <div class="p-6 border-b border-gray-200">
               <div class="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                <MapIcon class="h-12 w-12 text-gray-400" />
-                <span class="ml-2 text-gray-500">Map overview will be displayed here</span>
+                <div class="mapouter h-full w-full"><div class="gmap_canvas h-full w-full"><iframe class="gmap_iframe h-full w-full rounded-lg shadow-sm" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=NovelTea Kava Bar&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a class="sr-only" href="https://embed-googlemap.com">google maps embed</a></div></div>
+                <!-- <MapIcon class="h-12 w-12 text-gray-400" />
+                <span class="ml-2 text-gray-500">Map overview will be displayed here</span> -->
               </div>
               <div class="mt-4 flex justify-between text-sm">
                 <div>
