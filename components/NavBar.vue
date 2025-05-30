@@ -5,7 +5,7 @@
         <div class="flex">
           <NuxtLink to="/" class="flex-shrink-0 flex items-center">
             <div class="h-8 w-8 relative">
-              <img src="/kava-crawler-logo.png" alt="KavaCrawler Logo" class="h-full w-full object-contain" />
+              <img src="/kava-crawler-logo.png" alt="KavaCrawler Logo" class="h-full w-full object-contain rounded" />
             </div>
             <span class="ml-2 text-xl font-bold text-gray-900 dark:text-white hidden sm:block">KavaCrawler</span>
           </NuxtLink>
