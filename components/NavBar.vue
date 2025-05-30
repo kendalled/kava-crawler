@@ -5,10 +5,7 @@
         <div class="flex">
           <NuxtLink to="/" class="flex-shrink-0 flex items-center">
             <div class="h-8 w-8 relative">
-              <!-- Logo placeholder - replace with your SVG logo -->
-              <div class="h-full w-full bg-indigo-600 dark:bg-indigo-500 rounded flex items-center justify-center text-white">
-                <MapPinIcon class="h-5 w-5" />
-              </div>
+              <img src="/kava-crawler-logo.png" alt="KavaCrawler Logo" class="h-full w-full object-contain" />
             </div>
             <span class="ml-2 text-xl font-bold text-gray-900 dark:text-white hidden sm:block">KavaCrawler</span>
           </NuxtLink>
