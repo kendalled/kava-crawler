@@ -60,7 +60,7 @@
           <ThemeToggle />
           <a 
             href="https://github.com/kendalled/kava-crawler" 
-            class="bg-white dark:bg-gray-800 p-1 rounded-full text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-900"
+            class="p-1 rounded-full text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-900"
           >
             <span class="sr-only">View GitHub</span>
             <GithubIcon class="h-6 w-6" />
