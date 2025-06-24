@@ -58,7 +58,8 @@
         </div>
         <div class="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
           <ThemeToggle />
-          <a 
+          <a
+            target="_blank"
             href="https://github.com/kendalled/kava-crawler" 
             class="p-1 rounded-full text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-900"
           >
