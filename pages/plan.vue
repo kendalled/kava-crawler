@@ -50,13 +50,20 @@
                 
                 <div class="mb-4">
                   <label for="stops" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Number of Stops</label>
-                  <select 
-                    id="stops" 
-                    v-model="filters.stops" 
-                    class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 text-gray-900 dark:text-white text-sm"
-                  >
-                    <option v-for="n in 10" :key="n" :value="n">{{ n }}</option>
-                  </select>
+                  <div class="relative">
+                    <select 
+                      id="stops" 
+                      v-model="filters.stops" 
+                      class="mt-1 block w-full pl-3 pr-10 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 text-gray-900 dark:text-white text-sm appearance-none"
+                    >
+                      <option v-for="n in 10" :key="n" :value="n">{{ n }}</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 mt-1">
+                      <svg class="h-4 w-4 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 
                 <div class="mb-4">
@@ -86,7 +93,7 @@
                         type="date" 
                         id="date" 
                         v-model="filters.date" 
-                        class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 text-gray-900 dark:text-white text-sm"
+                        class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 text-gray-900 dark:text-white text-sm date-input"
                       />
                     </div>
                     <div>
@@ -95,7 +102,7 @@
                         type="time" 
                         id="time" 
                         v-model="filters.time" 
-                        class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 text-gray-900 dark:text-white text-sm"
+                        class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 text-gray-900 dark:text-white text-sm time-input"
                       />
                     </div>
                   </div>
@@ -312,3 +319,20 @@ function createItinerary() {
   });
 }
 </script>
+
+<style scoped>
+.date-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+  cursor: pointer;
+}
+
+.time-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+  cursor: pointer;
+}
+
+.dark .date-input::-webkit-calendar-picker-indicator,
+.dark .time-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+}
+</style>
